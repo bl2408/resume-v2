@@ -47,11 +47,17 @@ export default function Socials() {
 				);
 
 				return link ? (
-					<a href={link} target="_blank" className="icon-label">
+					<a
+						key={label}
+						href={link}
+						target="_blank"
+						className="icon-label">
 						{item}
 					</a>
 				) : (
-					<div className="icon-label">{item}</div>
+					<div key={label} className="icon-label">
+						{item}
+					</div>
 				);
 			})}
 		</div>

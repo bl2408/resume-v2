@@ -125,7 +125,7 @@ export default function HardSkills() {
 				{arr.map((skill) => {
 					const { icon, label } = skill;
 					const item = (
-						<div className="icon-label">
+						<div className="icon-label" key={label}>
 							<div className="icon grayscale">
 								{icon &&
 									cloneElement(icon, {

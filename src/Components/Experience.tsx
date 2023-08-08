@@ -40,7 +40,9 @@ const ExpContent = ({ title, points }: ExperienceContent) => {
 					<CalendarIcon /> {dates.start} <MinusIcon /> {dates.end}
 				</div>
 			</div>
-			<ul className="mb-4">{points?.map((pt) => <li>{pt}</li>)}</ul>
+			<ul className="mb-4">
+				{points?.map((pt, i) => <li key={`${company}pt${i}`}>{pt}</li>)}
+			</ul>
 		</>
 	);
 };
