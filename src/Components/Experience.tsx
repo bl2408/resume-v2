@@ -7,11 +7,12 @@ import { ExperienceContent } from "../types";
 import content from "../Content/experience.json";
 
 export default function Experience() {
+	const limit = 3;
 	return (
 		<section>
 			<h1>Experience</h1>
-			{content.map((item) => (
-				<ExpContent {...item} />
+			{(limit > 0 ? content.slice(0, limit) : content).map((item) => (
+				<ExpContent {...item} key={item.title.company} />
 			))}
 		</section>
 	);
