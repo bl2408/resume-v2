@@ -1,0 +1,92 @@
+[
+	{
+		"title": {
+			"dates": {
+				"start": "MAR 2019",
+				"end": "PRESENT"
+			},
+			"company": "Absolute Enthusiasts",
+			"position": "Co-Founder / Web master",
+			"link": "aeclub.com.au"
+		},
+		"points": [
+			"Manage a car club for car enthusiasts.",
+			"Organized and coordinated regular meetings, events, and activities for the club members.",
+			"Passionate about bringing people together around a shared interest and fostering a sense of community.",
+			"Responsible for managing the web server, domain name, hosting, and business email accounts.",
+			"Maintaining the club website using WordPress CMS.",
+			"Designing and developing custom themes, templates, and plugins.",
+			"Designing logos, graphics, and imagery using Photoshop, Lightroom, and vector art software."
+		]
+	},
+	{
+		"title": {
+			"dates": {
+				"start": "AUG 2012",
+				"end": "DEC 2022"
+			},
+			"company": "Crown Melbourne ltd",
+			"position": "Croupier"
+		},
+		"points": [
+			"Experienced croupier with expertise in dealing blackjack, baccarat, roulette, and a variety of minor games.",
+			"Skilled in providing exceptional customer service to customers of all levels.",
+			"Able to create a fun and professional atmosphere at the gaming table to ensure an enjoyable experience for all players.",
+			"Proficient in handling cash, chips, and identifying potential fraudulent activity.",
+			"Highly adaptable and able to cater to the unique needs and preferences of VIP customers."
+		]
+	},
+
+	{
+		"title": {
+			"dates": {
+				"start": "JAN 2010",
+				"end": "JAN 2011"
+			},
+			"company": "Eutectic Educational",
+			"position": "Software Developer"
+		},
+		"points": [
+			"Developed an interactive web application for educational purposes.",
+			"Designed the UI/UX based off clients specifications.",
+			"Implemented simple animations and graphs.",
+			"Conducted testing and debugging to ensure the app was functional and user-friendly."
+		]
+	},
+
+	{
+		"title": {
+			"dates": {
+				"start": "DEC 2009",
+				"end": "AUG 2012"
+			},
+			"company": "Coles Sanctuary lakes",
+			"position": "Various departments"
+		},
+		"points": [
+			"Fruit and vegetable, dairy, nightfill and cashier departments."
+		]
+	},
+
+	{
+		"title": {
+			"dates": {
+				"start": "NOV 2007",
+				"end": "DEC 2009"
+			},
+			"company": "Big W Altona meadows",
+			"position": "Team member"
+		}
+	},
+
+	{
+		"title": {
+			"dates": {
+				"start": "AUG 2006",
+				"end": "AUG 2006"
+			},
+			"company": "Commonwealth Bank",
+			"position": "Year 10 work experience"
+		}
+	}
+]

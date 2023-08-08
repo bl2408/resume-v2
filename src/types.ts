@@ -3,3 +3,16 @@ export type IconLabel = {
 	label?: string;
 	link?: string;
 };
+
+export type ExperienceContent = {
+	title: {
+		dates: {
+			start: string;
+			end: string;
+		};
+		company: string;
+		position: string;
+		link?: string;
+	};
+	points?: string[];
+};
