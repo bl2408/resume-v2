@@ -6,9 +6,10 @@ import {
 	MobileIcon,
 	SewingPinFilledIcon,
 } from "@radix-ui/react-icons";
+import { IconLabel } from "../types";
 
 export default function Socials() {
-	const socialsList: SocialList[] = [
+	const socialsList: IconLabel[] = [
 		{
 			icon: <EnvelopeClosedIcon />,
 			label: "hi@brianlambert.dev",
@@ -49,7 +50,7 @@ export default function Socials() {
 				);
 
 				return link ? (
-					<a href={link} className={styleClass}>
+					<a href={link} target="_blank" className={styleClass}>
 						{item}
 					</a>
 				) : (
@@ -59,9 +60,3 @@ export default function Socials() {
 		</div>
 	);
 }
-
-export type SocialList = {
-	icon: JSX.Element;
-	label: string;
-	link?: string;
-};
