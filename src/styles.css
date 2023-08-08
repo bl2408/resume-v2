@@ -6,3 +6,16 @@
 #root {
 	@apply w-full min-h-screen font-encodeSans;
 }
+
+h1 {
+	@apply font-semibold text-2xl;
+}
+h2 {
+	@apply font-semibold text-lg text-neutral-800;
+}
+
+@layer components {
+	.icon-label {
+		@apply flex items-center gap-2 p-1 [&_.icon_svg]:w-[18px] [&_.icon_svg]:h-full;
+	}
+}

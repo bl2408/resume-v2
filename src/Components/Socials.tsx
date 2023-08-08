@@ -33,28 +33,25 @@ export default function Socials() {
 		},
 		{ icon: <SewingPinFilledIcon />, label: "Melbourne, Vic" },
 	];
-	const styleClass = "flex item-center content-center h-[28px] gap-3 p-1";
 
 	return (
-		<div className="first-letter:px-4 py-1 font-medium tracking-tight text-black text-base flex gap-x-10 gap-y-2 flex-wrap max-xs:flex-col max-xs:w-full">
+		<div className=" py-1 font-medium tracking-tight text-black text-base flex gap-x-10 gap-y-2 flex-wrap max-xs:flex-col max-xs:w-full xl:justify-between">
 			{socialsList.map((sl) => {
 				const { icon, label, link } = sl;
 
 				const item = (
 					<>
-						<div className="[&>svg]:w-full [&>svg]:h-full">
-							{icon}
-						</div>
+						<div className="icon">{icon}</div>
 						<div>{label}</div>
 					</>
 				);
 
 				return link ? (
-					<a href={link} target="_blank" className={styleClass}>
+					<a href={link} target="_blank" className="icon-label">
 						{item}
 					</a>
 				) : (
-					<div className={styleClass}>{item}</div>
+					<div className="icon-label">{item}</div>
 				);
 			})}
 		</div>
