@@ -5,8 +5,8 @@
 				"start": "MAR 2019",
 				"end": "PRESENT"
 			},
-			"company": "Absolute Enthusiasts",
-			"position": "Co-Founder / Web master",
+			"subHeading": "Absolute Enthusiasts",
+			"heading": "Co-Founder / Web master",
 			"link": "aeclub.com.au"
 		},
 		"points": [
@@ -25,8 +25,8 @@
 				"start": "AUG 2012",
 				"end": "DEC 2022"
 			},
-			"company": "Crown Melbourne ltd",
-			"position": "Croupier"
+			"subHeading": "Crown Melbourne ltd",
+			"heading": "Croupier"
 		},
 		"points": [
 			"Experienced croupier with expertise in dealing blackjack, baccarat, roulette, and a variety of minor games.",
@@ -43,8 +43,8 @@
 				"start": "JAN 2010",
 				"end": "JAN 2011"
 			},
-			"company": "Eutectic Educational",
-			"position": "Software Developer"
+			"subHeading": "Eutectic Educational",
+			"heading": "Software Developer"
 		},
 		"points": [
 			"Developed an interactive web application for educational purposes.",
@@ -60,8 +60,8 @@
 				"start": "DEC 2009",
 				"end": "AUG 2012"
 			},
-			"company": "Coles Sanctuary lakes",
-			"position": "Various departments"
+			"subHeading": "Coles Sanctuary lakes",
+			"heading": "Various departments"
 		},
 		"points": [
 			"Fruit and vegetable, dairy, nightfill and cashier departments."
@@ -74,8 +74,8 @@
 				"start": "NOV 2007",
 				"end": "DEC 2009"
 			},
-			"company": "Big W Altona meadows",
-			"position": "Team member"
+			"subHeading": "Big W Altona meadows",
+			"heading": "Team member"
 		}
 	},
 
@@ -85,8 +85,8 @@
 				"start": "AUG 2006",
 				"end": "AUG 2006"
 			},
-			"company": "Commonwealth Bank",
-			"position": "Year 10 work experience"
+			"subHeading": "Commonwealth Bank",
+			"heading": "Year 10 work experience"
 		}
 	}
 ]

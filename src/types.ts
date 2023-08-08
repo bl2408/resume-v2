@@ -4,15 +4,20 @@ export type IconLabel = {
 	link?: string;
 };
 
-export type ExperienceContent = {
+export type ContentStructure = {
 	title: {
 		dates: {
 			start: string;
 			end: string;
 		};
-		company: string;
-		position: string;
+		heading: string;
+		subHeading: string;
 		link?: string;
 	};
 	points?: string[];
+};
+
+export type ContentProps = {
+	h1: string;
+	content: ContentStructure[];
 };

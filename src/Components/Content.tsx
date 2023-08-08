@@ -3,30 +3,29 @@ import {
 	ExternalLinkIcon,
 	MinusIcon,
 } from "@radix-ui/react-icons";
-import { ExperienceContent } from "../types";
-import content from "../Content/experience.json";
+import { ContentProps, ContentStructure } from "../types";
 
-export default function Experience() {
+export default function Content({ h1, content }: ContentProps) {
 	const limit = 3;
 	return (
 		<section>
-			<h1>Experience</h1>
+			<h1>{h1}</h1>
 			{(limit > 0 ? content.slice(0, limit) : content).map((item) => (
-				<ExpContent {...item} key={item.title.company} />
+				<ContentView {...item} key={item.title.heading} />
 			))}
 		</section>
 	);
 }
-const ExpContent = ({ title, points }: ExperienceContent) => {
-	const { position, company, link, dates } = title;
+const ContentView = ({ title, points }: ContentStructure) => {
+	const { subHeading, heading, link, dates } = title;
 
 	return (
 		<>
 			<div className="[&_svg]:inline-block mb-4">
-				<h1 className="mb-1 no-underline">{position}</h1>
+				<h1 className="mb-1 no-underline">{heading}</h1>
 
 				<div className="flex items-baseline gap-x-10 content-center mb-3">
-					<h2 className="mb-0">{company}</h2>
+					<h2 className="mb-0">{subHeading}</h2>
 					{link ? (
 						<a
 							href={`https://${link}`}
@@ -41,7 +40,7 @@ const ExpContent = ({ title, points }: ExperienceContent) => {
 				</div>
 			</div>
 			<ul className="mb-4">
-				{points?.map((pt, i) => <li key={`${company}pt${i}`}>{pt}</li>)}
+				{points?.map((pt, i) => <li key={`${heading}pt${i}`}>{pt}</li>)}
 			</ul>
 		</>
 	);
