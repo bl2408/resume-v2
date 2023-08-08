@@ -35,7 +35,7 @@ export default function Socials() {
 	];
 
 	return (
-		<div className=" py-1 font-medium tracking-tight text-black text-base flex gap-x-10 gap-y-2 flex-wrap max-xs:flex-col max-xs:w-full xl:justify-between">
+		<div className=" py-1 font-medium tracking-tight text-black text-sm flex gap-x-10 gap-y-2 flex-wrap max-2xs:flex-col max-xs:w-full lg:justify-between">
 			{socialsList.map((sl) => {
 				const { icon, label, link } = sl;
 

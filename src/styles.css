@@ -4,18 +4,24 @@
 @tailwind utilities;
 
 #root {
-	@apply w-full min-h-screen font-encodeSans;
+	@apply w-full min-h-screen font-encodeSans text-base;
 }
 
 h1 {
-	@apply font-semibold text-2xl;
+	@apply font-semibold text-2xl mb-4 underline;
 }
 h2 {
-	@apply font-semibold text-lg text-neutral-800;
+	@apply font-semibold text-lg text-neutral-600 mb-1;
+}
+ul {
+	@apply ml-5 list-inside list-disc;
+}
+li {
+	@apply py-1;
 }
 
 @layer components {
 	.icon-label {
-		@apply flex items-center gap-2 p-1 [&_.icon_svg]:w-[18px] [&_.icon_svg]:h-full;
+		@apply flex items-center gap-2 p-1 [&_.icon_svg]:w-[16px] [&_.icon_svg]:h-full;
 	}
 }

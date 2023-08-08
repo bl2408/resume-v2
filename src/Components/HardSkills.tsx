@@ -143,18 +143,16 @@ export default function HardSkills() {
 	};
 
 	return (
-		<section className="[&_h1]:mb-4 [&_h2]:mb-1">
-			<h1 className="underline">Hard skills</h1>
-			<div className="[&>div]:mb-7 border-l-[2px] ml-1 border-neutral-300 pl-5 sm:pl-10">
-				<h2>Languages</h2>
-				{createItems(skillsLanguages)}
-				<h2>Databases</h2>
-				{createItems(skillsDB)}
-				<h2>Frameworks</h2>
-				{createItems(skillsFrameworks)}
-				<h2>Other</h2>
-				{createItems(skillsOther)}
-			</div>
+		<section>
+			<h1>Hard skills</h1>
+			<h2>Languages</h2>
+			{createItems(skillsLanguages)}
+			<h2>Databases</h2>
+			{createItems(skillsDB)}
+			<h2>Frameworks</h2>
+			{createItems(skillsFrameworks)}
+			<h2>Other</h2>
+			{createItems(skillsOther)}
 		</section>
 	);
 }
