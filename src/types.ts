@@ -1,5 +1,5 @@
 export type IconLabel = {
-	icon: JSX.Element;
-	label: string;
+	icon?: JSX.Element;
+	label?: string;
 	link?: string;
 };
