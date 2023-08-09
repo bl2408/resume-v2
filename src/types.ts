@@ -18,6 +18,7 @@ export type ContentStructure = {
 };
 
 export type ContentProps = {
+	limit?: number;
 	h1: string;
 	content: ContentStructure[];
 };

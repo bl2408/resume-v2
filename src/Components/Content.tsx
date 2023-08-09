@@ -5,14 +5,15 @@ import {
 } from "@radix-ui/react-icons";
 import { ContentProps, ContentStructure } from "../types";
 
-export default function Content({ h1, content }: ContentProps) {
-	const limit = 3;
+export default function Content({ h1, content, limit }: ContentProps) {
 	return (
 		<section>
 			<h1>{h1}</h1>
-			{(limit > 0 ? content.slice(0, limit) : content).map((item) => (
-				<ContentView {...item} key={item.title.heading} />
-			))}
+			{(limit && limit > 0 ? content.slice(0, limit) : content).map(
+				(item) => (
+					<ContentView {...item} key={item.title.heading} />
+				)
+			)}
 		</section>
 	);
 }
