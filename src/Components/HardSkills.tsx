@@ -1,102 +1,80 @@
-import {
-	AmazonwebservicesOriginal,
-	CsharpPlain,
-	Css3Plain,
-	GitPlain,
-	GithubOriginal,
-	Html5Plain,
-	JavascriptPlain,
-	MysqlPlain,
-	NextjsOriginal,
-	PhotoshopPlain,
-	PhpPlain,
-	PostgresqlPlain,
-	RailsPlain,
-	ReactOriginal,
-	RubyOriginal,
-	SqlitePlain,
-	TailwindcssPlain,
-	TypescriptPlain,
-	UnityOriginal,
-	WordpressPlain,
-} from "devicons-react";
 import { IconLabel } from "../types";
 import { cloneElement } from "react";
 
 export default function HardSkills() {
 	const skillsLanguages: IconLabel[] = [
 		{
-			icon: <Html5Plain />,
+			icon: "devicon-html5-plain",
 			label: "HTML",
 		},
 		{
-			icon: <Css3Plain />,
+			icon: "devicon-css3-plain",
 			label: "CSS",
 		},
 		{
-			icon: <JavascriptPlain />,
+			icon: "devicon-javascript-plain",
 			label: "Javascript",
 		},
 		{
-			icon: <TypescriptPlain />,
+			icon: "devicon-typescript-plain",
 			label: "Typescript",
 		},
 
 		{
-			icon: <RubyOriginal />,
+			icon: "devicon-ruby-plain",
 			label: "Ruby",
 		},
 		{
-			icon: <PhpPlain />,
+			icon: "devicon-php-plain",
 			label: "PHP",
 		},
 		{
-			icon: <CsharpPlain />,
+			icon: "devicon-csharp-plain",
 			label: "C#",
 		},
 	];
 
 	const skillsFrameworks: IconLabel[] = [
 		{
-			icon: <ReactOriginal />,
+			icon: "devicon-react-plain",
 			label: "React",
 		},
 		{
-			icon: <NextjsOriginal />,
+			icon: "devicon-nextjs-plain",
 			label: "NextJS",
 		},
 		{
-			icon: <TailwindcssPlain />,
+			icon: "devicon-tailwindcss-plain",
 			label: "Tailwind",
 		},
 		{
-			icon: <RailsPlain />,
+			icon: "devicon-rails-plain",
 			label: "Rails",
 		},
 		{
-			icon: <WordpressPlain />,
+			icon: "devicon-wordpress-plain",
 			label: "Wordpress",
 		},
 	];
 	const skillsOther: IconLabel[] = [
 		{
-			icon: <GitPlain />,
+			icon: "devicon-git-plain",
 			label: "Git",
 		},
 		{
-			icon: <GithubOriginal />,
+			icon: "devicon-github-plain",
 			label: "Github",
 		},
 		{
-			icon: <AmazonwebservicesOriginal />,
+			icon: "devicon-amazonwebservices-original",
 			label: "AWS",
 		},
 		{
-			icon: <UnityOriginal />,
+			icon: "devicon-unity-original",
 			label: "Unity",
 		},
 		{
-			icon: <PhotoshopPlain />,
+			icon: "devicon-photoshop-plain",
 			label: "Photoshop",
 		},
 		{
@@ -106,15 +84,15 @@ export default function HardSkills() {
 
 	const skillsDB: IconLabel[] = [
 		{
-			icon: <MysqlPlain />,
+			icon: "devicon-mysql-plain",
 			label: "Mysql",
 		},
 		{
-			icon: <PostgresqlPlain />,
+			icon: "devicon-postgresql-plain",
 			label: "PostgreSQL",
 		},
 		{
-			icon: <SqlitePlain />,
+			icon: "devicon-sqlite-plain",
 			label: "SQLite",
 		},
 	];
@@ -128,10 +106,14 @@ export default function HardSkills() {
 						<div className="icon-label" key={label}>
 							<div className="icon grayscale">
 								{icon &&
-									cloneElement(icon, {
-										size: 16,
-										color: "black",
-									})}
+									(typeof icon !== "string" ? (
+										cloneElement(icon, {
+											size: 16,
+											color: "black",
+										})
+									) : (
+										<i className={icon}></i>
+									))}
 							</div>
 							<div className="text-neutral-600">{label}</div>
 						</div>
