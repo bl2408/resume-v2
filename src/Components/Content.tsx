@@ -32,7 +32,7 @@ const ContentView = ({ title, points }: ContentStructure) => {
 							href={`https://${link}`}
 							target="_blank"
 							className="text-sm italic">
-							{link} <ExternalLinkIcon />
+							{link.split("/")[0]} <ExternalLinkIcon />
 						</a>
 					) : null}
 				</div>
