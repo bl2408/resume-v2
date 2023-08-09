@@ -127,14 +127,24 @@ export default function HardSkills() {
 	return (
 		<section>
 			<h1>Hard skills</h1>
-			<h2>Languages</h2>
-			{createItems(skillsLanguages)}
-			<h2>Databases</h2>
-			{createItems(skillsDB)}
-			<h2>Frameworks</h2>
-			{createItems(skillsFrameworks)}
-			<h2>Other</h2>
-			{createItems(skillsOther)}
+			<div className="grid sm2:grid-cols-2 md:grid-cols-4 gap-2">
+				<div>
+					<h2>Languages</h2>
+					{createItems(skillsLanguages)}
+				</div>
+				<div>
+					<h2>Databases</h2>
+					{createItems(skillsDB)}
+				</div>
+				<div>
+					<h2>Frameworks</h2>
+					{createItems(skillsFrameworks)}
+				</div>
+				<div>
+					<h2>Other</h2>
+					{createItems(skillsOther)}
+				</div>
+			</div>
 		</section>
 	);
 }
