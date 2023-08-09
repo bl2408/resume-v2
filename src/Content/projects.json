@@ -1,0 +1,18 @@
+[
+	{
+		"title": {
+			"dates": {
+				"start": "JUN 2020  ",
+				"end": "PRESENT"
+			},
+			"subHeading": "Swoopy",
+			"heading": "Lateduck",
+			"link": "lateduck.com"
+		},
+		"points": [
+			"My brother and I combined our artistic and programming talents to design and develop a mobile game that showcased our shared passion for creativity. Together, we leveraged our skillsets, with my brother creating the art and graphics while I brought the game to life through programming.",
+			"Utilized the power of the Unity game engine and C# language with MonoDevelop.",
+			"Experienced using XCode and Gradle to test and deploy on iOS and Android."
+		]
+	}
+]

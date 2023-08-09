@@ -3,6 +3,7 @@ import HardSkills from "./Components/HardSkills";
 import Splash from "./Components/Splash";
 import expContent from "./Content/experience.json";
 import eduContent from "./Content/education.json";
+import proContent from "./Content/projects.json";
 
 export default function App() {
 	return (
@@ -11,6 +12,7 @@ export default function App() {
 			<HardSkills />
 			<Content h1="Experience" content={expContent} limit={3} />
 			<Content h1="Education" content={eduContent} />
+			<Content h1="Projects" content={proContent} />
 		</main>
 	);
 }
