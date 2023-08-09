@@ -11,6 +11,7 @@ export default {
 				"2xs": "360px",
 				xs: "475px",
 				sm2: "550px",
+				md2: "960px",
 			},
 		},
 	},
