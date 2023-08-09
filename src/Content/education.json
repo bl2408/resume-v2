@@ -1,0 +1,66 @@
+[
+	{
+		"title": {
+			"dates": {
+				"start": "AUG 2022",
+				"end": "MAR 2023"
+			},
+			"subHeading": "Software Engineering: Transform",
+			"heading": "Academy Xi",
+			"link": "academyxi.com/online-courses/software-engineering/"
+		},
+		"points": [
+			"Programming languages and frameworks covered include JavaScript, SQL, HTML, CSS, Ruby, Ruby on Rails, and React.",
+			"Gained expertise in designing and implementing software solutions using both OOP and functional programming paradigms.",
+			" Provided me with a strong foundation in web development and equipped me with the skills I need to build modern web applications using a variety of tools and technologies.",
+			"Designing, developing, and testing REST APIs while utilizing industry best practices to ensure optimal performance and functionality.",
+			"Experience in utilizing tools such as NodeJS, Git, and GitHub"
+		]
+	},
+	{
+		"title": {
+			"dates": {
+				"start": "AUG 2012",
+				"end": "AUG 2013"
+			},
+			"subHeading": "",
+			"heading": "Crown Melbourne ltd"
+		},
+		"points": [
+			"SIT30707 Certificate III - Hospitality",
+			"SIT30107 Certificate III - Tourism",
+			"Responsible Service of Alcohol",
+			"Responsible Service of Gaming"
+		]
+	},
+
+	{
+		"title": {
+			"dates": {
+				"start": "JAN 2010",
+				"end": "JAN 2011"
+			},
+			"subHeading": "",
+			"heading": "Victoria University Footscray"
+		},
+		"points": ["Bachelors of Interactive Media"]
+	},
+
+	{
+		"title": {
+			"dates": {
+				"start": "2009",
+				"end": "2011"
+			},
+			"subHeading": "",
+			"heading": "Victoria University St Albans"
+		},
+		"points": [
+			"Diploma of Information Technology (Multimedia)",
+			"Diploma of Information Technology (Website Development)",
+			"Advanced Diploma of Information Technology",
+			"Diploma of Information Technology (General)",
+			"Advanced Diploma of Computer Systems Engineering"
+		]
+	}
+]
