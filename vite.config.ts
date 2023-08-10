@@ -5,10 +5,20 @@ import react from "@vitejs/plugin-react";
 export default defineConfig(({ mode }) => {
 	const env = loadEnv(mode, process.cwd(), "");
 	console.log(
-		"USING BASE: " + (env.BUILD_BASE === "ghpages" ? "/resume-v2/" : "/")
+		"USING BASE: " +
+			(env.BUILD_BASE === "ghpages"
+				? "/resume-v2/"
+				: !env.BUILD_BASE
+				? "/"
+				: env.BUILD_BASE)
 	);
 	return {
-		base: env.BUILD_BASE === "ghpages" ? "/resume-v2/" : "/",
+		base:
+			env.BUILD_BASE === "ghpages"
+				? "/resume-v2/"
+				: !env.BUILD_BASE
+				? "/"
+				: env.BUILD_BASE,
 		plugins: [react()],
 		build: {
 			rollupOptions: {
