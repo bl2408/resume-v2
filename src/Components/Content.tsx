@@ -22,21 +22,21 @@ const ContentView = ({ title, points }: ContentStructure) => {
 
 	return (
 		<>
-			<div className="[&_svg]:inline-block mb-4">
+			<div className="[&_svg]:inline-block mb-4 print:mb-3">
 				<h1 className="mb-1 no-underline">{heading}</h1>
 
-				<div className="flex items-baseline gap-x-10 content-center mb-3">
+				<div className="flex items-baseline gap-x-10 content-center mb-3 print:mb-2">
 					<h2 className="mb-0">{subHeading}</h2>
 					{link ? (
 						<a
 							href={`https://${link}`}
 							target="_blank"
-							className="text-sm italic">
+							className="text-sm print:text-xs italic">
 							{link.split("/")[0]} <ExternalLinkIcon />
 						</a>
 					) : null}
 				</div>
-				<div className="text-sm italic flex items-center gap-x-2">
+				<div className="text-sm print:text-xs italic flex items-center gap-x-2 [&_svg]:print:w-[12px]">
 					<CalendarIcon /> {dates.start} <MinusIcon /> {dates.end}
 				</div>
 			</div>

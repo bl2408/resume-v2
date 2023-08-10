@@ -22,3 +22,13 @@ export type ContentProps = {
 	h1: string;
 	content: ContentStructure[];
 };
+
+export type SplashProps = {
+	pageBreaker?: boolean;
+};
+
+export type PageNumberProps = {
+	page: number;
+	of: number;
+	breaker?: boolean;
+};

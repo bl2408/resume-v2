@@ -3,25 +3,51 @@
 @tailwind components;
 @tailwind utilities;
 
-#root {
-	@apply w-full min-h-screen font-encodeSans text-base;
+@page {
+	size: A4;
+	margin: 11mm 17mm 17mm 17mm;
 }
 
+#root {
+	@apply w-full min-h-screen font-encodeSans text-base print:text-xs max-sm2:mb-16 print:w-[210mm] print:h-[297mm];
+}
+
+nav {
+	@apply print:hidden flex fixed left-0 top-0 sm2:justify-end w-full max-sm2:bottom-0 max-sm2:top-[unset] max-sm2:grid max-sm2:grid-cols-2;
+
+	& > * {
+		@apply bg-black p-3 text-white text-xs hover:bg-neutral-600 flex sm2:flex-col justify-center items-center gap-x-2 sm2:w-[60px] sm2:h-[60px];
+	}
+
+	svg {
+		@apply h-full;
+	}
+}
+
+/*
+section {
+	@apply break-inside-avoid-page;
+} */
+
 h1 {
-	@apply font-semibold text-2xl mb-4 underline;
+	@apply font-semibold text-2xl mb-4 underline print:text-base print:mb-1;
 }
 h2 {
-	@apply font-semibold text-lg text-neutral-600 mb-1;
+	@apply font-semibold text-lg text-neutral-600 mb-1 print:text-sm;
 }
 ul {
-	@apply ml-5 list-inside list-disc;
+	@apply pl-6 list-outside list-disc;
 }
 li {
-	@apply py-1;
+	@apply py-1 print:py-[2px];
 }
 
 @layer components {
 	.icon-label {
-		@apply flex items-center gap-2 p-1 [&_.icon_svg]:w-[16px] [&_.icon_svg]:h-full;
+		@apply flex items-center gap-2 p-1;
+
+		& .icon_svg {
+			@apply w-[16px] print:w-[12px] h-full;
+		}
 	}
 }
