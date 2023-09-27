@@ -14,5 +14,20 @@
 			"Utilized the power of the Unity game engine and C# language with MonoDevelop.",
 			"Experienced using XCode and Gradle to test and deploy on iOS and Android."
 		]
+	},
+	{
+		"title": {
+			"dates": {
+				"start": "JUL 2023",
+				"end": "PRESENT"
+			},
+			"heading": "Orbidle",
+			"link": "orbidle.com"
+		},
+		"points": [
+			"An idea inspired by the game wordle, which was created in order for me to gain hands on experience and a better understanding of Typescript.",
+			"Using NexJS for the front-end, BabylonJS for the 3D rendering engine, Redux toolkit for managing the site's and game's state and Tailwind for CSS styling.",
+			"Deployed using AWS Amplify and version controlled using git and github for a CI/CD pipeline."
+		]
 	}
 ]

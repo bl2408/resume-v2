@@ -20,23 +20,6 @@
 	{
 		"title": {
 			"dates": {
-				"start": "AUG 2012",
-				"end": "AUG 2013"
-			},
-			"subHeading": "",
-			"heading": "Crown Melbourne ltd"
-		},
-		"points": [
-			"SIT30707 Certificate III - Hospitality",
-			"SIT30107 Certificate III - Tourism",
-			"Responsible Service of Alcohol",
-			"Responsible Service of Gaming"
-		]
-	},
-
-	{
-		"title": {
-			"dates": {
 				"start": "JAN 2010",
 				"end": "JAN 2011"
 			},
@@ -61,6 +44,22 @@
 			"Advanced Diploma of Information Technology",
 			"Diploma of Information Technology (General)",
 			"Advanced Diploma of Computer Systems Engineering"
+		]
+	},
+	{
+		"title": {
+			"dates": {
+				"start": "AUG 2012",
+				"end": "AUG 2013"
+			},
+			"subHeading": "",
+			"heading": "Crown Melbourne ltd"
+		},
+		"points": [
+			"SIT30707 Certificate III - Hospitality",
+			"SIT30107 Certificate III - Tourism",
+			"Responsible Service of Alcohol",
+			"Responsible Service of Gaming"
 		]
 	}
 ]

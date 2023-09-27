@@ -5,6 +5,7 @@ import expContent from "./Content/experience.json";
 import eduContent from "./Content/education.json";
 import proContent from "./Content/projects.json";
 import { FileTextIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
+import Footer from "./Components/Footer";
 // import PageNumber from "./Components/PageNumber";
 
 export default function App() {
@@ -23,14 +24,16 @@ export default function App() {
 					Print
 				</button>
 			</nav>
+
 			<main className="p-10 flex items-center gap-10 print:gap-5 flex-col [&>*]:max-w-screen-md2 [&>*]:w-full min-w-[320px] [&>*]:print:break-inside-avoid-page">
 				<Splash />
 				<HardSkills />
 				<Content h1="Experience" content={expContent} limit={3} />
-
+				<Footer />
 				<Splash pageBreaker />
-				<Content h1="Education" content={eduContent} />
+				<Content h1="Education" content={eduContent} limit={3} />
 				<Content h1="Projects" content={proContent} />
+				<Footer />
 			</main>
 		</>
 	);

@@ -11,7 +11,7 @@ export type ContentStructure = {
 			end: string;
 		};
 		heading: string;
-		subHeading: string;
+		subHeading?: string;
 		link?: string;
 	};
 	points?: string[];

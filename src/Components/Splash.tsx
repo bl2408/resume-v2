@@ -5,7 +5,7 @@ export default function Splash({ pageBreaker = false }: SplashProps) {
 	return (
 		<div
 			className={`flex flex-col gap-2 print:gap-1 ${
-				pageBreaker && "print:block hidden print:mt-20"
+				pageBreaker && "print:block hidden print:break-before-page mt-3"
 			}`}>
 			<div
 				className={`text-left text-[clamp(3rem,20vw,5rem)] font-semibold leading-[.9em] tracking-tight text-black   ${

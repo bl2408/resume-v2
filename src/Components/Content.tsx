@@ -18,15 +18,17 @@ export default function Content({ h1, content, limit }: ContentProps) {
 	);
 }
 const ContentView = ({ title, points }: ContentStructure) => {
-	const { subHeading, heading, link, dates } = title;
+	const { heading, link, dates } = title;
+
+	const subHeading = title.subHeading;
 
 	return (
 		<>
-			<div className="[&_svg]:inline-block mb-4 print:mb-3">
+			<div className="[&_svg]:inline-block mb-3">
 				<h1 className="mb-1 no-underline">{heading}</h1>
 
 				<div className="flex items-baseline gap-x-10 content-center mb-3 print:mb-2">
-					<h2 className="mb-0">{subHeading}</h2>
+					{subHeading && <h2 className="mb-0">{subHeading}</h2>}
 					{link ? (
 						<a
 							href={`https://${link}`}
@@ -40,7 +42,7 @@ const ContentView = ({ title, points }: ContentStructure) => {
 					<CalendarIcon /> {dates.start} <MinusIcon /> {dates.end}
 				</div>
 			</div>
-			<ul className="mb-4">
+			<ul className="mb-[10px]">
 				{points?.map((pt, i) => <li key={`${heading}pt${i}`}>{pt}</li>)}
 			</ul>
 		</>
