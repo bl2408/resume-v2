@@ -6,7 +6,6 @@ import eduContent from "./Content/education.json";
 import proContent from "./Content/projects.json";
 import { FileTextIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 import Footer from "./Components/Footer";
-// import PageNumber from "./Components/PageNumber";
 
 export default function App() {
 	return (
